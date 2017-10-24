@@ -1,6 +1,9 @@
 const app = require("express")();
 const body = require("connect-multiparty")();
+const cors = require("cors");
 const NodeGeocoder = require('node-geocoder');
+
+app.use(cors());
 
 const options = {
  provider: 'google',
